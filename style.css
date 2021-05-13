@@ -45,6 +45,7 @@ table {
     --btn-border-color: rgb(76, 76, 76);
     --link-color: #0077C5;
     --text-color:  #505050;
+    width: 100%;
 }
 @font-face {
     font-family: metropolis;
@@ -62,6 +63,8 @@ table {
 body {    
     font-family: "metropolis";
     background-color: rgb(236, 238, 241);
+    width: 100%;
+    margin: 0px;
 }
 a {
     color:  var(--link-color);
@@ -127,6 +130,7 @@ a:hover {
 }
 
 main { 
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -138,7 +142,6 @@ main {
     background-color: #fff;
     border: 1px solid #c7c7c7;
     display: block;
-    height: 811px;
     width: 380px;
     box-sizing: border-box;
     margin-top: 20px;
@@ -230,11 +233,63 @@ form input {
 
 #form-footer {
     margin-top: 30px;
-    margin-bottom: 40px;
     font-family: "metropolis-extra-light";
     font-size: 12px;
     font-style: italic;
     line-height: 18px;
     text-align: center;
     color: #757575
+}
+
+#capcha-container {
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    margin: 32px -30px -30px -30px;
+    padding: 16px;
+    background-color: #ECEEF1 ;
+}
+
+#capcha-terms {
+    font-family: "metropolis-extra-light";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    
+}
+
+#page-footer {
+    font-family: "metropolis-extra-light";
+    box-sizing: border-box;
+    display: block;
+    height: 235px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+#legal-links li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#disclaimer-container span {
+    display: block;
+    color: #505050;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#privacy-settings {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    height: 64px;
+    margin-top: 72px;
+    min-width: 380px;
+    padding: 20px;
+    background-color: white;
+    text-align: left;
 }

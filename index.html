@@ -8,7 +8,7 @@
     <title>Signup Page</title>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="header-content-container">
             <div class="header-legend-container">
                 <div class="legend">Already have an Intuit account?</div>
@@ -26,7 +26,43 @@
        
     </header>
     <main>
-        
+       <img src="images/intuit_image.jpg" alt="page logos">
+       <div class="form-container">
+           <header class="form-header-container">
+                <span class="sign-up-header">Create an Intuit account</span>
+                <span class="sub-header">
+                    <span>One account for everything Intuit, including Mint.</span>
+                    <a href="#">Learn more</a>
+                    
+                </span>
+           </header>
+           <form id="form-sign-up" action="#" method="post" autocomplete="off" novalidate="">
+               <label for="input-email">Email address</label>
+               <input type="email" name="input-email">
+               <label for="input-phone">Phone
+                   <span class="label-extra">(recommended)</span>
+                   <input type="tel" name="input-phone">
+               </label>
+               <label for="input-psw">Password</label>
+               <input type="email" name="input-psw">
+               <label for="input-psw-conf">Confirm Password</label>
+               <input type="email" name="input-psw-conf">
+
+               <button id="create-acc-btn">
+                <i class="fa fa-lock"></i>
+                Create Account 
+               </button>
+           </form>
+           <footer id="form-footer">
+               <span>
+                By selecting Create Account, you agree to our <a href="#">Terms</a> and have read and acknowledge our <a href="#">Global Privacy Statement</a>.
+               </span>
+           </footer>
+           <section id="capcha-container">
+               <span id="capcha-terms">Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a>&nbsp;and&nbsp;<a href="#">Terms of Use</a>.</span>
+           </section>
+
+       </div> 
     </main>
 </body>
 </html>

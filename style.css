@@ -51,15 +51,28 @@ table {
     src: url("font/Metropolis-Medium.otf") format("opentype");
 }
 
+@font-face {
+    font-family: metropolis-light;
+    src: url("font/Metropolis-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: metropolis-extra-light;
+    src: url("font/Metropolis-ExtraLight.otf") format("opentype");
+}
 body {    
     font-family: "metropolis";
     background-color: rgb(236, 238, 241);
 }
 a {
     color:  var(--link-color);
+    text-decoration: none;
 }
 
-header {
+a:hover {
+    text-decoration: underline;
+}
+
+.main-header {
     box-sizing: border-box;
     height: 60px;
     padding-top: 10px;
@@ -111,4 +124,117 @@ header {
     border-radius: 5px;
     background-color: var(--btn-color);
     font-size: 13.5px;
+}
+
+main { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+    display: block;
+    height: 811px;
+    width: 380px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 30px;
+}
+.form-header-container  {
+    display: block;
+    
+}
+
+.form-header-container span {
+    display: block;
+    text-align: center;
+}
+
+.sign-up-header {
+    font-family: "metropolis-light";
+    color: #393A3D;
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 24px;
+}
+
+.sub-header {
+    font-family: "metropolis-light";
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    color:#393A3D;
+    line-height: 16.8px;
+}
+
+form {
+    display: block;
+}
+
+form label {
+    margin-top: 30px;
+    padding-bottom: 6px;
+    font-family: "metropolis-light";
+    display: block;
+    font-weight: normal;
+    color: #404040;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+form input {
+    box-sizing: border-box;
+    display: block;
+    display: inline-block;
+    height: 34px;
+    width: 320px;
+    min-width: 160px;
+    padding-left: 8px;
+    padding-right: 6px;
+    border: 1px solid #d8d8d8;
+    color: #000000;
+    outline: none;
+    font-size: 1.2em;
+    border-radius: 3px;
+    line-height: 1.3em;
+}
+
+.label-extra {
+    font-family: "metropolis-extra-light";
+    color: #717171;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+#create-acc-btn {
+    margin-top: 30px;
+    border: solid 1px var(--btn-border-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    font-size: 15px;
+    font-stretch: 100%;
+    text-align: center;
+    vertical-align: middle;
+    height: 44px;
+    min-width: 100px;
+    padding: 6px 12px;
+    width: 318px;
+}
+
+#form-footer {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: "metropolis-extra-light";
+    font-size: 12px;
+    font-style: italic;
+    line-height: 18px;
+    text-align: center;
+    color: #757575
 }
